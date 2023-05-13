@@ -5,7 +5,7 @@ import {
   Card
 } from "react-bootstrap";
 import styled from "styled-components"
-import ProfilePic from "./../Assets/OldProfilePic.jpg"
+import ProfilePic from "./../Assets/ProfilePic_May2023.jpg"
 
 const AboutMe = () => {
   return (
