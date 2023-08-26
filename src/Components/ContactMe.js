@@ -4,7 +4,10 @@ import {
   Button,
   Form
 } from 'react-bootstrap';
-import styled from "styled-components"
+import styled from "styled-components";
+
+const apiEndpoint = "https://api.bryancaesar.com/ContactMe";
+const errorAlert = "Error - An error occurred. Please try again or email me at bryancaesar42@gmail.com";
 
 const ContactMe = () => {
   const [validName, setValidName] = useState(null);
@@ -28,10 +31,42 @@ const ContactMe = () => {
     handleValidationChange(isValid);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // TODO
+    if (formIsValid) {
+      const requestBody = {
+        "name": name,
+        "email": email,
+        "subject": subject,
+        "message": message
+      };
+
+      const requestOptions = {
+        method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(requestBody)
+      };
+
+      try {
+        const response = await fetch(apiEndpoint, requestOptions);
+        const data = await response.json();
+
+        if (data.success) {
+          alert("Success - Thank you for contacting me! I'll get back to you shortly.");
+        }
+        else {
+          alert(errorAlert);
+        }
+      }
+      catch (error) {
+        alert(errorAlert);
+      }
+    }
+    else {
+      alert("Unable to submit because the form is missing required data or contains an invalid value. Please double-check your inputs and try again.");
+    }
   };
 
   return (
