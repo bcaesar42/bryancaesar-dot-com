@@ -3,8 +3,7 @@ import {
   Card,
   Button,
   Form,
-  InputGroup,
-  Row
+  InputGroup
 } from 'react-bootstrap';
 import styled from "styled-components"
 
@@ -18,7 +17,7 @@ const ContactMe = () => {
     if (form.checkValidity() === true) {
       alert("This component is currently unable to send emails. Please email me directly at bryancaesar42@gmail.com");
     }
-    else{
+    else {
       // handle invalid form
     }
 
@@ -33,55 +32,47 @@ const ContactMe = () => {
 
       <Card.Body>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          <Row className="mb-4">
-            <Form.Group>
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Your Name"
-              />
-            </Form.Group>
-          </Row>
+          <Form.Group className="mb-4">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              required
+              type="text"
+              placeholder="Your Name"
+            />
+          </Form.Group>
 
-          <Row className="mb-4">
-            <Form.Group>
-              <Form.Label>Email</Form.Label>
-              <InputGroup hasValidation>
-                <InputGroup.Text>@</InputGroup.Text>
-                <Form.Control
-                  type="email"
-                  placeholder="youremail@example.com"
-                  required
-                />
-                <Form.Control.Feedback type="invalid" tooltip>
-                  Please enter your email address
-                </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-          </Row>
-
-          <Row className="mb-4">
-            <Form.Group>
-              <Form.Label>Subject</Form.Label>
+          <Form.Group className="mb-4">
+            <Form.Label>Email</Form.Label>
+            <InputGroup hasValidation>
+              <InputGroup.Text>@</InputGroup.Text>
               <Form.Control
-                type="text"
-                placeholder="Subject"
-              />
-            </Form.Group>
-          </Row>
-
-          <Row className="mb-4">
-            <Form.Group>
-              <Form.Label>Message</Form.Label>
-              <Form.Control
-                as="textarea"
-                rows={4}
-                placeholder="Your message"
+                type="email"
+                placeholder="youremail@example.com"
                 required
               />
-            </Form.Group>
-          </Row>
+              <Form.Control.Feedback type="invalid" tooltip>
+                Please enter your email address
+              </Form.Control.Feedback>
+            </InputGroup>
+          </Form.Group>
+
+          <Form.Group className="mb-4">
+            <Form.Label>Subject</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Subject"
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-4">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows={4}
+              placeholder="Your message"
+              required
+            />
+          </Form.Group>
 
           <Button type="submit" className="mx-auto">Submit</Button>
         </Form>
