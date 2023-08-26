@@ -2,26 +2,36 @@ import React, { useState } from 'react';
 import {
   Card,
   Button,
-  Form,
-  InputGroup
+  Form
 } from 'react-bootstrap';
 import styled from "styled-components"
 
 const ContactMe = () => {
-  const [validated, setValidated] = useState(false);
+  const [validName, setValidName] = useState(null);
+  const [validEmail, setValidEmail] = useState(null);
+  const [validSubject, setValidSubject] = useState(null);
+  const [validMessage, setValidMessage] = useState(null);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const formIsValid = validName && validEmail && validSubject && validMessage;
+
+  const handleInputBoxChange = (event, handleInput, handleValidationChange) => {
+    const inputBox = event.currentTarget;
+
+    handleInput(inputBox.value);
+
+    const isValid = inputBox.checkValidity();
+    handleValidationChange(isValid);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const form = event.currentTarget;
-    if (form.checkValidity() === true) {
-      alert("This component is currently unable to send emails. Please email me directly at bryancaesar42@gmail.com");
-    }
-    else {
-      // handle invalid form
-    }
-
-    setValidated(true);
+    // TODO
   };
 
   return (
@@ -31,29 +41,29 @@ const ContactMe = () => {
       </Card.Header>
 
       <Card.Body>
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form noValidate validated={formIsValid} onSubmit={handleSubmit}>
           <Form.Group className="mb-4">
             <Form.Label>Name</Form.Label>
             <Form.Control
-              required
               type="text"
               placeholder="Your Name"
+              required
+              isValid={validName}
+              isInvalid={validName === false}
+              onChange={e => handleInputBoxChange(e, setName, setValidName)}
             />
           </Form.Group>
 
           <Form.Group className="mb-4">
             <Form.Label>Email</Form.Label>
-            <InputGroup hasValidation>
-              <InputGroup.Text>@</InputGroup.Text>
-              <Form.Control
-                type="email"
-                placeholder="youremail@example.com"
-                required
-              />
-              <Form.Control.Feedback type="invalid" tooltip>
-                Please enter your email address
-              </Form.Control.Feedback>
-            </InputGroup>
+            <Form.Control
+              type="email"
+              placeholder="youremail@example.com"
+              required
+              isValid={validEmail}
+              isInvalid={validEmail === false}
+              onChange={e => handleInputBoxChange(e, setEmail, setValidEmail)}
+            />
           </Form.Group>
 
           <Form.Group className="mb-4">
@@ -61,6 +71,10 @@ const ContactMe = () => {
             <Form.Control
               type="text"
               placeholder="Subject"
+              required
+              isValid={validSubject}
+              isInvalid={validSubject === false}
+              onChange={e => handleInputBoxChange(e, setSubject, setValidSubject)}
             />
           </Form.Group>
 
@@ -71,10 +85,13 @@ const ContactMe = () => {
               rows={4}
               placeholder="Your message"
               required
+              isValid={validMessage}
+              isInvalid={validMessage === false}
+              onChange={e => handleInputBoxChange(e, setMessage, setValidMessage)}
             />
           </Form.Group>
 
-          <Button type="submit" className="mx-auto">Submit</Button>
+          <Button type="submit" className="mx-auto" disabled={!formIsValid}>Submit</Button>
         </Form>
       </Card.Body>
     </StyledCard>
