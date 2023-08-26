@@ -126,7 +126,9 @@ const ContactMe = () => {
             />
           </Form.Group>
 
-          <Button type="submit" className="mx-auto" disabled={!formIsValid}>Submit</Button>
+          <div className="d-flex justify-content-center">
+            <Button type="submit" disabled={!formIsValid}>Submit</Button>
+          </div>
         </Form>
       </Card.Body>
     </StyledCard>
