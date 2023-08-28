@@ -7,7 +7,7 @@ import Logo from './Logo';
 
 const MyNavBar = () => {
   return (
-    <Navbar sticky="top" bg="dark" variant="dark" expand="md">
+    <Navbar sticky="top" bg="secondary" variant="dark" expand="md">
       <Container fluid>
         <Navbar.Brand href="#home">
           <Logo />
