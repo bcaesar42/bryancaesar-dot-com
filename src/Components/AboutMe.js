@@ -15,7 +15,7 @@ const AboutMe = () => {
       </StyledCol>
 
       <StyledCol className="justify-content-md-start">
-        <StyledCard id="about" bg="secondary" text="light" className="my-3">
+        <StyledCard id="about" bg="secondary" text="light" border="primary" className="my-3">
           <Card.Header as="h2" className="text-center">
             About Me
           </Card.Header>
@@ -46,7 +46,7 @@ const StyledCol = styled(Col).attrs({
 `;
 
 const StyledImage = styled(Image)`
-  max-height: 650px;
+  max-height: 700px;
 `;
 
 const StyledCard = styled(Card)`

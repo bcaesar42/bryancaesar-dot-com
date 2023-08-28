@@ -1,0 +1,21 @@
+$primary: #2bc5e0;
+$secondary: #5f5d59;
+$light: #bebaa2;
+$dark: #4A5159;
+$info: #1775a3;
+
+$success: #3e8d63;
+$warning: #b8c924;
+$danger: #d62518;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  light: $light;
+  dark: $dark;
+  info: $info;
+
+  success: $success;
+  warning: $warning;
+  danger:$danger;
+};
