@@ -70,7 +70,7 @@ const ContactMe = () => {
   };
 
   return (
-    <StyledCard id="contact" bg="secondary" text="light" className='mx-auto'>
+    <StyledCard id="contact" bg="secondary" text="primary" className='mx-auto'>
       <Card.Header as="h2" className="text-center">
         Contact Me
       </Card.Header>
