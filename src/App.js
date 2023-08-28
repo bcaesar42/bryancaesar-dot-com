@@ -1,4 +1,4 @@
-import "./Styles/App.css"
+import "./Styles/App.scss"
 import {
   Stack,
   ThemeProvider
