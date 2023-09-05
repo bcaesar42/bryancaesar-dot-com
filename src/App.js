@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe';
 import ContactMe from './Components/ContactMe';
 import Resume from './Components/Resume/Resume';
+import Hero from './Components/Hero/Hero';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <NavBar />
 
       <div className='d-flex flex-column align-items-center'>
+        <Hero />
         <AboutMe />
         <Resume />
         <ContactMe />
