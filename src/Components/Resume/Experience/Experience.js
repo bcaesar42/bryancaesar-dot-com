@@ -8,8 +8,8 @@ const Experience = () => {
   const [activeJobIndex, setActiveJobIndex] = useState(0);
 
   return (
-    <div>
-      <Nav className="flex-column" variant="pills" defaultActiveKey="0">
+    <div className="d-flex flex-column flex-sm-row">
+      <Nav className="flex-sm-column" variant="pills" defaultActiveKey="0">
         {workHistory.map((job, index) =>
           <StyledNavItem key={job.Employer}>
             <Nav.Link
