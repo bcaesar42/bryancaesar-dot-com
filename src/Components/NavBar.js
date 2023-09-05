@@ -8,7 +8,7 @@ import Logo from './Logo';
 
 const MyNavBar = () => {
   return (
-    <Navbar sticky="top" expand="md" bg="secondary" variant="dark">
+    <Navbar sticky="top" expand="md" bg="dark3" variant="dark">
       <Container fluid>
         <Navbar.Brand href="#home">
           <Logo />
@@ -30,6 +30,7 @@ const MyNavBar = () => {
 export default MyNavBar;
 
 const StyledNavLink = styled(Nav.Link)`
+  // The "&&&" part is to increase the CSS specificity so that it takes priority over the react-bootstrap style.
   &&& {
     color: ${props => props.theme.primary || 'white'}
   }
