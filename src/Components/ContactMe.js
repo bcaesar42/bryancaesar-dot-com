@@ -143,7 +143,7 @@ const SectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: ${props => props.theme.dark2 || 'black'};
+  background-color: ${props => props.theme.dark || 'black'};
   padding: ${props => props.theme.sectionPadding || '50px'};
 `;
 
