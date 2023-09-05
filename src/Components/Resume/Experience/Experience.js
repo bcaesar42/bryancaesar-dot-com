@@ -36,4 +36,16 @@ const StyledNavItem = styled(Nav.Item)`
 
 const StyledNavLink = styled.button`
   width: 100%;
+
+  &&.active {
+    background-color: ${props => props.theme.dark || 'black'};
+    color: ${props => props.theme.light3 || 'white'};
+    border: .15rem solid ${props => props.theme.primary || 'white'};
+  }
+
+  &:not(.active) {
+    background-color: ${props => props.theme.dark3 || 'darkgray'};
+    color: ${props => props.theme.light2 || 'white'};
+    border: .15rem solid ${props => props.theme.light2 || 'white'};
+  }
 `;
