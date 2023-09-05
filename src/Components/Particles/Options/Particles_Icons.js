@@ -1,30 +1,19 @@
-import awsLogo from "./../Assets/BackgroundSvgs/AwsLogo.svg";
-import cSharpLogo from "./../Assets/BackgroundSvgs/CSharpLogo.svg";
-import dockerLogo from "./../Assets/BackgroundSvgs/DockerLogo.svg";
-import githubLogo from "./../Assets/BackgroundSvgs/GithubLogo.svg";
-import reactLogo from "./../Assets/BackgroundSvgs/ReactLogo.svg";
-import sqlServerLogo from "./../Assets/BackgroundSvgs/SqlServerLogo.svg";
-import visualStudioLogo from "./../Assets/BackgroundSvgs/VisualStudioLogo.svg";
-import vsCodeLogo from "./../Assets/BackgroundSvgs/VSCodeLogo.svg";
+import awsLogo from "./../../../Assets/BackgroundSvgs/AwsLogo.svg";
+import cSharpLogo from "./../../../Assets/BackgroundSvgs/CSharpLogo.svg";
+import dockerLogo from "./../../../Assets/BackgroundSvgs/DockerLogo.svg";
+import githubLogo from "./../../../Assets/BackgroundSvgs/GithubLogo.svg";
+import reactLogo from "./../../../Assets/BackgroundSvgs/ReactLogo.svg";
+import sqlServerLogo from "./../../../Assets/BackgroundSvgs/SqlServerLogo.svg";
+import visualStudioLogo from "./../../../Assets/BackgroundSvgs/VisualStudioLogo.svg";
+import vsCodeLogo from "./../../../Assets/BackgroundSvgs/VSCodeLogo.svg";
 
 // Docs for configuring particles:
 //  https://particles.js.org/docs/index.html
 //  https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
 
-export const ParticlesConfig = {
-  fullScreen: {
-    enable: true,
-    zIndex: -1
-  },
-  background: {
-    color: {
-      value: {
-        r: 65,
-        g: 65,
-        b: 65
-      }
-    }
-  },
+const Particles_Icons = {
+  fullScreen: false,
+  background: {},
   particles: {
     number: {
       value: 16,
@@ -94,3 +83,5 @@ export const ParticlesConfig = {
     }
   }
 };
+
+export default Particles_Icons;

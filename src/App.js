@@ -1,22 +1,23 @@
 import './Styles/App.scss';
 import theme from './Styles/_theme.scss';
-import Stack from 'react-bootstrap/Stack';
-import { ThemeProvider } from "styled-components";
-import ParticleBackground from './Components/ParticleBackground';
+import { ThemeProvider } from 'styled-components';
 import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe';
 import ContactMe from './Components/ContactMe';
+import Resume from './Components/Resume/Resume';
+import Hero from './Components/Hero/Hero';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      {/* <ParticleBackground /> */}
       <NavBar />
 
-      <Stack gap={5} className="p-4 bg-dark">
+      <div className='d-flex flex-column align-items-center'>
+        <Hero />
         <AboutMe />
+        <Resume />
         <ContactMe />
-      </Stack>
+      </div>
     </ThemeProvider>
   );
 };
