@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
 import Experience from './Experience/Experience';
 import Education from './Education';
+import Skills from './Skills/Skills';
 
 const tabs = {
   Experience: <Experience />,
-  Skills: <div />,
+  Skills: <Skills />,
   Education: <Education />,
 };
 
