@@ -5,6 +5,17 @@ import skillsInfo from './SkillsInfo.json';
 const Skills = () => {
   const [searchValue, setSearchValue] = useState();
 
+  let filteredSkills;
+
+  if (searchValue) {
+    const formattedSearchValue = searchValue.toLowerCase().trim();
+
+    filteredSkills = skillsInfo.filter(skill => skill.toLowerCase().includes(formattedSearchValue));
+  }
+  else {
+    filteredSkills = skillsInfo;
+  }
+
   return (
     <Wrapper>
       <SearchBar
@@ -14,7 +25,7 @@ const Skills = () => {
       />
 
       <SkillsList>
-        {skillsInfo.map(skill =>
+        {filteredSkills.map(skill =>
           <SkillCard key={skill}>
             {skill}
           </SkillCard>
@@ -62,11 +73,11 @@ const SkillsList = styled.div`
 
   &::-webkit-scrollbar {
     display: block;
-    width: 1rem;
+    width: .75rem;
   }
 
   &::-webkit-scrollbar-thumb {
-    width: 1rem;
+    width: .75rem;
     background-color: ${props => props.theme.light || 'silver'};
     border-radius: 25px;
   }
@@ -78,6 +89,7 @@ const SkillCard = styled.h3`
   text-align: center;
 
   flex: 1 0 30%;
+  max-width: 350px;
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
