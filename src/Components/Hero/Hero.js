@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 import TerminalAnimation from './TerminalAnimation';
 import resume from './../../Assets/Resume.pdf';
 import Button from 'react-bootstrap/Button';
+import ParticleBackground from '../Particles/ParticlesBackground';
 
 const Hero = () => {
   return (
@@ -13,6 +14,8 @@ const Hero = () => {
       <ResumeDownloadButton variant='success' size="lg">
         Download Resume
       </ResumeDownloadButton>
+
+      <ParticleBackground variant='WildLines' />
     </SectionWrapper>
   );
 };
@@ -31,6 +34,9 @@ const SectionWrapper = styled.section`
 
   background-color: black;
   padding: ${props => props.theme.sectionPadding || '50px'};
+
+  position: static;
+  z-index: 1;
 `;
 
 const MainText = styled.h1`
