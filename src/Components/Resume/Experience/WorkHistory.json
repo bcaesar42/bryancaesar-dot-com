@@ -1,0 +1,91 @@
+[
+  {
+    "JobTitle": "Software Engineer",
+    "Employer": "Avenge Digital",
+    "TimePeriod": "Oct. 2020 - Apr. 2023",
+    "BulletPoints": [
+      {
+        "Text": "Maintained and expanded an ASP,NET Core MVC application that was the backbone of the company",
+        "SubBullets": [
+          "Split monolith application into microservices to decrease server load and increase scalability.",
+          "Significantly reduced loading times via multi-threading.",
+          "Upgraded legacy NET Framework app to meet .NET 6/C# 10 standards.",
+          "Improved app stability by enabling consistent testing by all engineers."
+        ]
+      },
+      {
+        "Text": "Integrated with dozens of APIs from partner companies. Created, tested, deployed, and maintained several connected services using a .NET stack and AWS."
+      },
+      {
+        "Text": "One of only 3 engineers at the company."
+      }
+    ],
+    "TechnologiesUsed": [
+      "C#",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "MS SQL Server",
+      "Docker",
+      "Fluent Migrator",
+      "Vue",
+      "AWS S3",
+      "AWS EC2",
+      "AWS ECR",
+      "AWS ECS",
+      "AWS Lambda",
+      "AWS IAM",
+      "AWS EventBridge"
+    ]
+  },
+  {
+    "JobTitle": "Software Development / Cybersecurity Intern",
+    "Employer": "Rivial Data Security",
+    "TimePeriod": "Jan. 2019 - Jun. 2020",
+    "BulletPoints": [
+      {
+        "Text": "Took a product from concept to MVP in less than a year."
+      },
+      {
+        "Text": "Architected and implemented a distributed micro-service web app hosted in the cloud."
+      },
+      {
+        "Text": "Utilized CI/CD pipelines to streamline code and dependency updates between development, testing, and production environments."
+      },
+      {
+        "Text": "Coordinated with product owner to understand requirements, suggest ideas, and describe implemented solutions."
+      },
+      {
+        "Text": "One of only 3 engineers at the company"
+      }
+    ],
+    "TechnologiesUsed": [
+      "React",
+      "JavaScript",
+      "NodeJS",
+      "GraphQL",
+      "AWS Amplify",
+      "AWS S3",
+      "AWS Lambda",
+      "AWS DynamoDB",
+      "AWS Cognito",
+      "AWS Step Functions"
+    ]
+  },
+  {
+    "JobTitle": "Computer Literacy Teaching Assistant",
+    "Employer": "Eastern Washington University",
+    "TimePeriod": "Sept. 2018 - Dec. 2018",
+    "BulletPoints": [
+      {
+        "Text": "Taught students how to use HTML and CSS to create websites."
+      },
+      {
+        "Text": "Instructed students how to host their websites online."
+      }
+    ],
+    "TechnologiesUsed": [
+      "HTML",
+      "CSS"
+    ]
+  }
+]

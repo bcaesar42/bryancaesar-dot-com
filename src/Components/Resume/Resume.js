@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
-import Experience from './Experience';
+import Experience from './Experience/Experience';
 import Education from './Education';
 
 const tabs = {

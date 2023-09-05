@@ -19,6 +19,7 @@ const MyNavBar = () => {
           <Nav className="align-items-center">
             <StyledNavLink href="#home">Home</StyledNavLink>
             <StyledNavLink href="#about">About</StyledNavLink>
+            <StyledNavLink href="#resume">Resume</StyledNavLink>
             <StyledNavLink href="#contact">Contact</StyledNavLink>
           </Nav>
         </Navbar.Collapse>
