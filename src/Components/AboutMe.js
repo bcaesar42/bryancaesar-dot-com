@@ -1,54 +1,70 @@
-import {
-  Row,
-  Col,
-  Image,
-  Card
-} from "react-bootstrap";
-import styled from "styled-components"
-import ProfilePic from "./../Assets/ProfilePic_May2023.jpg"
+import styled from 'styled-components';
+import ProfilePic from './../Assets/ProfilePic_May2023.jpg';
 
 const AboutMe = () => {
   return (
-    <Row xs={1} md={2} className="align-items-center">
-      <StyledCol className="justify-content-md-end">
-        <StyledImage fluid rounded src={ProfilePic} />
-      </StyledCol>
+    <SectionWrapper id="about">
+      <StyledImage />
 
-      <StyledCol className="justify-content-md-start">
-        <StyledCard id="about" bg="secondary" text="light" className="my-3">
-          <Card.Header as="h2" className="text-center">
-            About Me
-          </Card.Header>
-
-          <Card.Body>
-            <Card.Text>
-              I'm a full-stack software engineer based in Cheney, WA.
-              I specialize in web applications, .NET, and AWS.
-            </Card.Text>
-
-            <Card.Text>
-              During my time in the software industry, I was often one of only 3 engineers at a given company.
-              Therefore, I have honed a truly full-stack skill set.
-            </Card.Text>
-          </Card.Body>
-        </StyledCard>
-      </StyledCol>
-    </Row>
+      <TextWrapper>
+        <Title>About Me</Title>
+        <Description>
+          I'm a full-stack software engineer based in Cheney, WA.
+          I specialize in web applications, .NET, and AWS.
+        </Description>
+        <Description>
+          During my time in the software industry, I was often one of only 3 engineers at a given company.
+          Therefore, I have honed a truly full-stack skill set.
+        </Description>
+      </TextWrapper>
+    </SectionWrapper>
   );
 };
 
 export default AboutMe;
 
-const StyledCol = styled(Col).attrs({
-  className: "d-flex justify-content-center"
+const SectionWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: ${props => props.theme.sectionPadding || '50px'};
+  width: 100%;
+  background-color: ${props => props.theme.dark || 'black'};
+  padding: ${props => props.theme.sectionPadding || '50px'};
+`;
+
+const StyledImage = styled.img.attrs({
+  src: ProfilePic
 })`
-  /* CSS */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 1rem;
 `;
 
-const StyledImage = styled(Image)`
-  max-height: 650px;
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 500px;
 `;
 
-const StyledCard = styled(Card)`
-  max-width: 40rem;
+const Title = styled.h1`
+  color: ${props => props.theme.light3 || 'white'};
+  font-size: 3.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  width: fit-content;
+  border-bottom: ${props => `4px solid ${props.theme.primary || 'white'}`};
+  margin-bottom: 1rem;
+  align-self: center;
+`;
+
+const Description = styled.p`
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 1.5rem;
+  color: ${props => props.theme.light2 || 'white'};
+  margin: 1rem 0;
 `;

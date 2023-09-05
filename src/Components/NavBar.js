@@ -3,11 +3,12 @@ import {
   Nav,
   Container
 } from 'react-bootstrap';
+import styled from 'styled-components';
 import Logo from './Logo';
 
 const MyNavBar = () => {
   return (
-    <Navbar sticky="top" bg="dark" variant="dark" expand="md">
+    <Navbar fixed="top" expand="md" bg="dark3" variant="dark">
       <Container fluid>
         <Navbar.Brand href="#home">
           <Logo />
@@ -15,10 +16,11 @@ const MyNavBar = () => {
 
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav className="align-items-center">
+            <StyledNavLink href="#hero">Home</StyledNavLink>
+            <StyledNavLink href="#about">About</StyledNavLink>
+            <StyledNavLink href="#resume">Resume</StyledNavLink>
+            <StyledNavLink href="#contact">Contact</StyledNavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -27,3 +29,10 @@ const MyNavBar = () => {
 };
 
 export default MyNavBar;
+
+const StyledNavLink = styled(Nav.Link)`
+  // The "&&&" part is to increase the CSS specificity so that it takes priority over the react-bootstrap style.
+  &&& {
+    color: ${props => props.theme.primary || 'white'}
+  }
+`;

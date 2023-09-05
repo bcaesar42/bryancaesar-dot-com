@@ -1,0 +1,43 @@
+$primary: #2bc5e0;
+$secondary: #5f5d59;
+
+$info: #1775a3;
+$success: #55cc55;
+$warning: #b8c924;
+$danger: #f03022;
+
+$dark: #2c2d2e;
+$dark2: #424242;
+$dark3: #5f5d59;
+
+$light: #bebaa2;
+$light2: #dddddddd;
+$light3: white;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+
+  'info': $info,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger,
+
+  'dark': $dark,
+  'dark2': $dark2,
+  'dark3': $dark3,
+
+  'light': $light,
+  'light2': $light2,
+  'light3': $light3
+);
+
+:export {
+  // colors
+  @each $key, $value in $theme-colors {
+    #{unquote($key)}: $value;
+  }
+
+  // spacing
+  sectionPadding: 3rem;
+};
