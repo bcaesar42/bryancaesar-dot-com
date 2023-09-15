@@ -16,11 +16,11 @@ const MyNavBar = () => {
 
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav className="align-items-center">
-            <StyledNavLink href="#hero">Home</StyledNavLink>
-            <StyledNavLink href="#about">About</StyledNavLink>
-            <StyledNavLink href="#resume">Resume</StyledNavLink>
-            <StyledNavLink href="#contact">Contact</StyledNavLink>
+          <Nav className="align-items-center gap-3">
+            <Nav.Link as={StyledNavLink} href="#hero">Home</Nav.Link>
+            <Nav.Link as={StyledNavLink} href="#about">About</Nav.Link>
+            <Nav.Link as={StyledNavLink} href="#resume">Resume</Nav.Link>
+            <Nav.Link as={StyledNavLink} href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -30,9 +30,12 @@ const MyNavBar = () => {
 
 export default MyNavBar;
 
-const StyledNavLink = styled(Nav.Link)`
-  // The "&&&" part is to increase the CSS specificity so that it takes priority over the react-bootstrap style.
+const StyledNavLink = styled.a`
+  // The "&&&" part is to increase the CSS specificity so it takes priority over the react-bootstrap style.
   &&& {
-    color: ${props => props.theme.primary || 'white'}
+    color: ${props => props.theme.primary || 'white'};
+    
+    font-size: 1.25rem;
+    font-weight: bold;
   }
 `;
