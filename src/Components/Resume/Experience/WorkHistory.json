@@ -5,7 +5,7 @@
     "TimePeriod": "Oct. 2020 - Apr. 2023",
     "BulletPoints": [
       {
-        "Text": "Maintained and expanded an ASP,NET Core MVC application that was the backbone of the company",
+        "Text": "Maintained and expanded an ASP.NET Core MVC application that was the backbone of the company",
         "SubBullets": [
           "Split monolith application into microservices to decrease server load and increase scalability.",
           "Significantly reduced loading times via multi-threading.",
@@ -18,6 +18,9 @@
       },
       {
         "Text": "One of only 3 engineers at the company."
+      },
+      {
+        "Text": "Fully remote position."
       }
     ],
     "TechnologiesUsed": [
@@ -32,9 +35,11 @@
       "AWS EC2",
       "AWS ECR",
       "AWS ECS",
+      "AWS Fargate",
       "AWS Lambda",
       "AWS IAM",
-      "AWS EventBridge"
+      "AWS EventBridge",
+      "NUnit"
     ]
   },
   {
@@ -55,7 +60,10 @@
         "Text": "Coordinated with product owner to understand requirements, suggest ideas, and describe implemented solutions."
       },
       {
-        "Text": "One of only 3 engineers at the company"
+        "Text": "One of only 3 engineers at the company."
+      },
+      {
+        "Text": "Hybrid (office/remote) position."
       }
     ],
     "TechnologiesUsed": [
