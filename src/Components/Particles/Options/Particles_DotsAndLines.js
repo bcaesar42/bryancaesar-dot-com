@@ -22,10 +22,10 @@ const Particles_DotsAndLines = {
         size: 40
       },
       push: {
-        quantity: 4
+        quantity: 5
       },
       repulse: {
-        distance: 200,
+        distance: 175,
         duration: 0.4
       }
     }
@@ -36,7 +36,7 @@ const Particles_DotsAndLines = {
     },
     links: {
       color: "#5f5d59",
-      distance: 150,
+      distance: 200,
       enable: true,
       opacity: 0.75,
       width: 2
@@ -57,7 +57,7 @@ const Particles_DotsAndLines = {
         enable: true,
         area: 800
       },
-      value: 80
+      value: 40
     },
     opacity: {
       value: 0.75

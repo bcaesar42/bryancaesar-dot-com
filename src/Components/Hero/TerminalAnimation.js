@@ -3,9 +3,10 @@ import Typed from 'react-typed';
 
 const StringsToType = [
   "Software Engineer",
-  ".NET Engineer",
   "Full-Stack Engineer",
   "Software Architect",
+  ".NET Engineer",
+  "React Developer",
   "Unit Tester"
 ];
 
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
 
   padding: 1rem;
   width: 90%;
-  max-width: 850px;
+  max-width: 875px;
   height: clamp(95px, 25vw, 240px);
 
   border-radius: 2rem;
