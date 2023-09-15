@@ -8,13 +8,22 @@ const AboutMe = () => {
 
       <TextWrapper>
         <Title>About Me</Title>
+
         <Description>
           I'm a full-stack software engineer based in Cheney, WA.
-          I specialize in web applications, .NET, and AWS.
+          I specialize in web applications, .NET (C#), React, and AWS.
+          I also have a background in cybersecurity, which helps me to always keep security in mind when working.
         </Description>
+
         <Description>
-          During my time in the software industry, I was often one of only 3 engineers at a given company.
-          Therefore, I have honed a truly full-stack skill set.
+          During my time in the software industry, I have often been one of only 3 engineers at a given company.
+          Therefore, I have had to fill alot of roles, which has helped me to develop a truly full-stack skill set.
+        </Description>
+
+        <Description>
+          I love making things and I'm always looking to learn new skills.
+          When I'm not coding or spending time with family and friends, I enjoy learning new DIY skills to help me renovate my house.
+          No matter what I'm working on, I always pride myself on the quality of my work and stive to keep improving.
         </Description>
       </TextWrapper>
     </SectionWrapper>

@@ -51,7 +51,10 @@
         "Text": "Took a product from concept to MVP in less than a year."
       },
       {
-        "Text": "Architected and implemented a distributed micro-service web app hosted in the cloud."
+        "Text": "Architected, implemented, and maintained a complex web app using a microservice architecture, React, and AWS."
+      },
+      {
+        "Text": "Performed monthly security audits and patching on React application."
       },
       {
         "Text": "Utilized CI/CD pipelines to streamline code and dependency updates between development, testing, and production environments."
