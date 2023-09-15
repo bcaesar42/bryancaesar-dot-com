@@ -37,5 +37,8 @@ const StyledNavLink = styled.a`
     
     font-size: 1.25rem;
     font-weight: bold;
+
+    border-bottom: 2px solid white;
+    padding-bottom: .1rem;
   }
 `;
