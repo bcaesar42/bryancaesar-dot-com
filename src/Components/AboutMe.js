@@ -17,7 +17,7 @@ const AboutMe = () => {
 
         <Description>
           During my time in the software industry, I have often been one of only 3 engineers at a given company.
-          Therefore, I have had to fill alot of roles, which has helped me to develop a truly full-stack skill set.
+          Therefore, I have had to fill a lot of roles, which has helped me to develop a truly full-stack skill set.
         </Description>
 
         <Description>
