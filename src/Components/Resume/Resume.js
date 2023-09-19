@@ -78,6 +78,6 @@ const StyledNavLink = styled(Nav.Link)`
   &:not(.active) {
     background-color: ${props => props.theme.dark3 || 'darkgray'};
     color: ${props => props.theme.light3 || 'white'};
-    border: 1px solid ${props => props.theme.light3 || 'white'};;
+    border: 1px solid ${props => props.theme.light3 || 'white'};
   }
 `;
