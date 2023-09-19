@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 const Education = () => {
   return (
     <EducationWrapper>
-      <SecondaryText>Recieved a</SecondaryText>
+      <SecondaryText>Received a</SecondaryText>
       <PrimaryText>Bachelor of Computer Science</PrimaryText>
       <SecondaryText>degree from</SecondaryText>
       <PrimaryText>Eastern Washington University</PrimaryText>

@@ -45,7 +45,7 @@ const StyledNavLink = styled.button`
 
   &:not(.active) {
     background-color: ${props => props.theme.dark3 || 'darkgray'};
-    color: ${props => props.theme.light2 || 'white'};
+    color: ${props => props.theme.light3 || 'white'};
     border: .15rem solid ${props => props.theme.light2 || 'white'};
   }
 `;

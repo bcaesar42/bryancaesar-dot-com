@@ -127,7 +127,8 @@ const ContactMe = () => {
               />
             </Form.Group>
 
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-evenly">
+              <span className='text-white'>All fields are required</span>
               <Button type="submit" disabled={!formIsValid}>Submit</Button>
             </div>
           </Form>
@@ -150,6 +151,7 @@ const SectionWrapper = styled.section`
 const StyledCard = styled(Card)`
   width: 100%;
   max-width: 40rem;
+  border-color: ${props => props.theme.primary || 'black'};
 `;
 
 const InputBoxStyles = css`
