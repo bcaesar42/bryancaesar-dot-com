@@ -48,11 +48,11 @@ const Header = styled.h2`
 
 const Location = styled.span`
   font-size: 1.25rem;
-  color: ${props => props.theme.light2 || 'white'};
+  color: ${props => props.theme.primary || 'white'};
 `;
 
 const SubTitle = styled.h4`
-  color: ${props => props.theme.light2 || 'white'};
+  color: ${props => props.theme.light3 || 'white'};
   width: fit-content;
   margin: 1rem 0;
   border-bottom: ${props => `2px solid ${props.theme.primary || 'white'}`};
@@ -74,8 +74,8 @@ const TechnologiesList = styled.div`
 `;
 
 const Technology = styled.div`
-  color: ${props => props.theme.light2 || 'white'};
-  background-color: ${props => props.theme.dark || 'black'};
+  color: ${props => props.theme.light3 || 'white'};
+  background-color: ${props => props.theme.dark2 || 'black'};
   margin: 3px;
   padding: 8px;
   border-radius: 15px;

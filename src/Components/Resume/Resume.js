@@ -46,7 +46,7 @@ const SectionWrapper = styled.section`
   align-items: center;
   gap: 1rem;
   width: 100%;
-  background-color: ${props => props.theme.dark2 || 'black'};
+  background-color: black;
   padding: ${props => props.theme.sectionPadding || '50px'};
 `;
 
@@ -78,5 +78,6 @@ const StyledNavLink = styled(Nav.Link)`
   &:not(.active) {
     background-color: ${props => props.theme.dark3 || 'darkgray'};
     color: ${props => props.theme.light3 || 'white'};
+    border: 1px solid ${props => props.theme.light3 || 'white'};;
   }
 `;

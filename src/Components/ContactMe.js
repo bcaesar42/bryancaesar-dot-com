@@ -150,6 +150,7 @@ const SectionWrapper = styled.section`
 const StyledCard = styled(Card)`
   width: 100%;
   max-width: 40rem;
+  border-color: ${props => props.theme.primary || 'black'};
 `;
 
 const InputBoxStyles = css`
