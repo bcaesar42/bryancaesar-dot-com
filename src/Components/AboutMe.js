@@ -15,7 +15,7 @@ const AboutMe = () => {
         </Description>
 
         <Description>
-          I was one of the 3 original architects/engineers of the <a href="https://www.rivialsecurity.com/cybersecurity-software/rivial-platform" target="_blank">Rivial software platform</a>.
+          I was one of the 3 original architects/engineers of the <a href="https://www.rivialsecurity.com/cybersecurity-software/rivial-platform" target="_blank" rel="noopener noreferrer">Rivial software platform</a>.
           Given my background in cybersecurity, I always keep security in mind when working.
         </Description>
 
