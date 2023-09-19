@@ -5,7 +5,7 @@
     "TimePeriod": "Oct. 2020 - Apr. 2023",
     "BulletPoints": [
       {
-        "Text": "Maintained and expanded an ASP.NET Core MVC application that was the backbone of the company",
+        "Text": "Maintained and expanded an ASP.NET Core MVC application that was the backbone of the company.",
         "SubBullets": [
           "Split monolith application into microservices to decrease server load and increase scalability.",
           "Significantly reduced loading times via multi-threading.",
@@ -14,7 +14,10 @@
         ]
       },
       {
-        "Text": "Integrated with dozens of APIs from partner companies. Created, tested, deployed, and maintained several connected services using a .NET stack and AWS."
+        "Text": "Integrated with dozens of APIs from partner companies."
+      },
+      {
+        "Text": " Created, tested, deployed, and maintained several connected services using a .NET stack and AWS."
       },
       {
         "Text": "One of only 3 engineers at the company."

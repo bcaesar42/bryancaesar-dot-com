@@ -12,18 +12,22 @@ const AboutMe = () => {
         <Description>
           I'm a full-stack software engineer based in Cheney, WA.
           I specialize in web applications, .NET (C#), React, and AWS.
-          I also have a background in cybersecurity, which helps me to always keep security in mind when working.
         </Description>
 
         <Description>
-          During my time in the software industry, I have often been one of only 3 engineers at a given company.
-          Therefore, I have had to fill a lot of roles, which has helped me to develop a truly full-stack skill set.
+          I was one of the 3 original architects/engineers of the <a href="https://www.rivialsecurity.com/cybersecurity-software/rivial-platform" target="_blank">Rivial software platform</a>.
+          Given my background in cybersecurity, I always keep security in mind when working.
+        </Description>
+
+        <Description>
+          I have often been one of only 3 engineers at a given company.
+          Because of this, I have played a significant role in every aspect of the software lifecycle.
         </Description>
 
         <Description>
           I love making things and I'm always looking to learn new skills.
           When I'm not coding or spending time with family and friends, I enjoy learning new DIY skills to help me renovate my house.
-          No matter what I'm working on, I always pride myself on the quality of my work and stive to keep improving.
+          No matter what I'm working on, I always pride myself on the quality of my work and strive to keep improving.
         </Description>
       </TextWrapper>
     </SectionWrapper>
